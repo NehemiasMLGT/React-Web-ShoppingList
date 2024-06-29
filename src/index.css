@@ -1,13 +1,119 @@
 body {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+h1 {
+  text-align: center;
+}
+
+h5 {
+  text-align: center;
+  color: orange;
+}
+
+footer {
+  text-align: center;
+  font-style: italic;
+}
+
+button {
+  background-color: aquamarine;
+  color: green;
+  border-color: none;
+  border-radius: 5px;
+  border-style: none;
+  padding: 5px;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+table {
+  width: 400px;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  border: solid 1px;
+  border-radius: 5px;
+}
+
+thead {
+  background-color: beige;
+}
+
+th {
+  height: 30px;
+}
+
+form {
+  width: 400px;
+  margin: auto;
+}
+
+.classCompleted {
+  color: gray;
+  font-style: italic;
+  text-decoration: line-through
+}
+
+.buttonDelete {
+  background-color: red;
+  color: white;
+  border-color: none;
+  border-radius: 5px;
+  border-style: none;
+}
+
+.appWrapper {
+  background-color: white;
+  margin-left: 5px;
+  margin-right: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+.headerWrapper {
+  background-color: beige;
+  align-content: center;
+  margin-top: 5px;
+  border-bottom: 1px solid orange;
+}
+
+.mainWrapper {
+  width: 80%;
+  margin: auto;
+  margin-top: 5px;;
+}
+
+.footerWrapper {
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  background-color: beige;
+  align-content: center;
+  margin-top: 5px;
+  border-top: 1px solid orange;
+  border-bottom: 1px solid orange;
+}
+
+.addWrapper {
+  margin: 5px;
+  display:flex;
+  justify-content: space-around;
+}
+
+.sortWrapper {
+  margin: 5px;
+  display:flex;
+  justify-content: space-around;
+}
+
+.buttonsCell {
+  display:flex;
+  justify-content: flex-end;
 }
