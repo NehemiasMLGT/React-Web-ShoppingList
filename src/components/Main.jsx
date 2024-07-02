@@ -28,6 +28,8 @@ const Main = ({shoppingList,handleAddData,deleteItem,completeItem}) => {
     if(sortBy==="byStatus") {
         sortedItems = shoppingList.toSorted((a, b) => a.completed - b.completed);
     }
+    var noItems = "No items to show, add one.";
+    if (Object.keys(shoppingList).length > 0)  noItems = "";
     return (
         <div className="mainWrapper">
             <Add handleAddData={handleAddData}/>
@@ -45,8 +47,10 @@ const Main = ({shoppingList,handleAddData,deleteItem,completeItem}) => {
                         shoppingList={shoppingList} 
                         deleteItem={deleteItem} 
                         completeItem={completeItem} />)}
+                        {noItems}
                     </tbody>
-                    <div className="sortWrapper">Sort items: 
+                </table>
+                <div className="sortWrapper">Sort items: 
                         <select className="select" value={sortBy} onChange={(e) => setSortBy(e.target.value)}>
                             <option value="byId">By ID</option>
                             <option value="byName">By Name</option>
@@ -54,7 +58,6 @@ const Main = ({shoppingList,handleAddData,deleteItem,completeItem}) => {
                             <option value="byStatus">By Status</option>
                         </select>
                     </div>
-                </table>
             </div>
         </div>
     )

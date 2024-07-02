@@ -108,7 +108,9 @@ form {
 }
 
 .sortWrapper {
-  margin: 5px;
+  width: 50%;
+  margin: auto;
+  padding-bottom: 10px;
   display:flex;
   justify-content: space-around;
 }
